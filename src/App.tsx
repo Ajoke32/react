@@ -6,6 +6,7 @@ import AdminPanel from "./components/AdminPanel.tsx";
 import Home from "./components/Home.tsx";
 import Header from "./components/Header.tsx";
 import Layout from "./components/Layout.tsx";
+import NotFound from "./components/NotFound.tsx";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                           <Route path="/dashboard" element={<Dashboard/>}></Route>
                       </Route>
                       <Route path="/login" element={<Login/>} />
+                      <Route path="/*" element={<NotFound/>}/>
                   </Route>
               </Routes>
       </BrowserRouter>
